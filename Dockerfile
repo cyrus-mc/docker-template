@@ -21,12 +21,12 @@ ENV JAVA_XMS="1024m"
 # 
 # our entry point script
 #
-COPY start.sh /
+COPY scripts/start.sh /
 
 #
-# copy in the application
+# copy application (JAR, config, etc)
 #
-COPY application.jar /
+COPY application/* /application/
 
 #
 # switch to user 
