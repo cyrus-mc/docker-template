@@ -4,7 +4,7 @@ MAINTAINER Smarsh <techops@smarsh.com>
 #
 # Some usefull environment variables
 #
-ENV SERVICE template
+ENV APPLICATION template
 ENV USER nobody
 
 #
@@ -27,6 +27,7 @@ COPY scripts/start.sh /
 # copy application (JAR, config, etc)
 #
 COPY application/* /application/
+COPY config/* /config/
 
 #
 # switch to user 

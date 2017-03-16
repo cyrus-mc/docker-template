@@ -13,7 +13,7 @@ fi
 if [ "${1:0:1}" = '-' ]; then
   set -- java "$@"
 else
-  set -- java -Xmx${JAVA_XMX} -Xms${JAVA_XMS} -jar $EXECUTABLE_JAR
+  set -- java -Xmx${JAVA_XMX} -Xms${JAVA_XMS} -jar $EXECUTABLE_JAR --spring.config.name=${APPLICATION}.application
 fi
 
 # execute
