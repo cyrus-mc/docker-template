@@ -13,6 +13,9 @@ ENV USER nobody
 ENV JAVA_XMX="1024m"
 ENV JAVA_XMS="1024m"
 
+# additional java settings
+ENV JAVA_OPTS=""
+
 #
 # Create user to run service as
 #
